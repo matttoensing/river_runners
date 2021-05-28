@@ -58,7 +58,7 @@
 ```
 
 ## Iteration 3
-Your task is to create a way for each guide service to track of each guides tips at the end of each day for tax purposes. The guide service has multiple guides and each guide has more than one customer that may or may not tip the guide at the end of the trip.
+Your task is to create a way for each guide service to track each guides tips at the end of each day for tax purposes. The guide service has multiple guides and each guide has more than one customer that may or may not tip the guide at the end of the trip.
 
   - The guide service has a unique name and a way to read that data
   - The guide service has multiple guides and a way to keep track of that data
