@@ -7,53 +7,53 @@
 ## Iteration 1
 
 ```
-[1] pry(main)> require './lib/passenger'
+pry(main)> require './lib/passenger'
 => true
-[2] pry(main)> billy = Passenger.new({first_name: 'Billy', last_name: "Lowell", age: 28, max_tip_amount: 50, excitement_level: 6})
+pry(main)> billy = Passenger.new({first_name: 'Billy', last_name: "Lowell", age: 28, max_tip_amount: 50, excitement_level: 6})
 => #<Passenger:0x00007fc587298d18
-[3] pry(main)> billy.full_name
+pry(main)> billy.full_name
 => "Billy Lowell"
-[4] pry(main)> billy.age
+pry(main)> billy.age
 => 28
-[5] pry(main)> billy.max_tip_amount
+pry(main)> billy.max_tip_amount
 => 50
-[6] pry(main)> billy.excitement_level
+pry(main)> billy.excitement_level
 => 6
 ```
 
 ## Iteration 2
 
 ```
-[1] pry(main)> require './lib/passenger'
+pry(main)> require './lib/passenger'
 => true
-[2] pry(main)> require './lib/guide'
+pry(main)> require './lib/guide'
 => true
-[3] pry(main)> billy = Passenger.new({first_name: 'Billy', last_name: "Lowell", age: 28, max_tip_amount: 50, excitement_level: 6})
+pry(main)> billy = Passenger.new({first_name: 'Billy', last_name: "Lowell", age: 28, max_tip_amount: 50, excitement_level: 6})
 => #<Passenger:0x00007f9800295758
-[4] pry(main)> johanna = Passenger.new({first_name: 'Johanna', last_name: "Smith", age: 22, max_tip_amount: 35, excitement_level: 8})
+pry(main)> johanna = Passenger.new({first_name: 'Johanna', last_name: "Smith", age: 22, max_tip_amount: 35, excitement_level: 8})
 => #<Passenger:0x00007f9800237a40
-[5] pry(main)> phil = Guide.new("Phil", "Pandora", [billy, johanna])
+pry(main)> phil = Guide.new("Phil", "Pandora", [billy, johanna])
 => #<Guide:0x00007f980018ccd0
-[6] pry(main)> phil.name
+pry(main)> phil.name
 => "Phil"
-[7] pry(main)> phil.boat_name
+pry(main)> phil.boat_name
 => "Pandora"
-[8] pry(main)> phil.passengers
+pry(main)> phil.passengers
 => [#<Passenger:0x00007f9800295758,
  #<Passenger:0x00007f9800237a40]
-[9] pry(main)> phil.boat_flipped?
+pry(main)> phil.boat_flipped?
 => false
-[10] pry(main)> phil.passengers_excitement
+pry(main)> phil.passengers_excitement
 => {"Billy Lowell"=>6, "Johanna Smith"=>8}
-[11] pry(main)> phil.tips_made
+pry(main)> phil.tips_made
 => 0
-[12] pry(main)> phil.trip_over
-[14] pry(main)> phil.tips_made
+pry(main)> phil.trip_over
+pry(main)> phil.tips_made
 => 85
-[15] pry(main)> phil.boat_flipped = true
+pry(main)> phil.boat_flipped = true
 => true
-[16] pry(main)> phil.trip_over
-[17] pry(main)> phil.tips_made
+pry(main)> phil.trip_over
+pry(main)> phil.tips_made
 => 42.5
 ```
 
