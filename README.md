@@ -6,7 +6,7 @@
 
 ## Iteration 1
 
-```
+```Ruby
 pry(main)> require './lib/passenger'
 => true
 pry(main)> billy = Passenger.new({first_name: 'Billy', last_name: "Lowell", age: 28, max_tip_amount: 50, excitement_level: 6})
@@ -23,7 +23,7 @@ pry(main)> billy.excitement_level
 
 ## Iteration 2
 
-```
+```Ruby
 pry(main)> require './lib/passenger'
 => true
 pry(main)> require './lib/guide'
